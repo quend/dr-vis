@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../lib64/libdrdecode.a  CMakeFiles/drdecode.dir/instrlist.c.o CMakeFiles/drdecode.dir/x86/decode.c.o CMakeFiles/drdecode.dir/x86/decode_table.c.o CMakeFiles/drdecode.dir/x86/encode.c.o CMakeFiles/drdecode.dir/x86/instr.c.o CMakeFiles/drdecode.dir/x86/disassemble.c.o CMakeFiles/drdecode.dir/x86/decode_fast.c.o CMakeFiles/drdecode.dir/x86/mangle.c.o CMakeFiles/drdecode.dir/x86/decodelib.c.o CMakeFiles/drdecode.dir/x86/x86.asm.o
+/usr/bin/ranlib ../lib64/libdrdecode.a

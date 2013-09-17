@@ -1,0 +1,4 @@
+/usr/bin/cc  -fPIC -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable       -shared -Wl,-soname,libdrinjectlib.so -o ../lib64/libdrinjectlib.so CMakeFiles/drinjectlib.dir/unix/injector.c.o CMakeFiles/drinjectlib.dir/config.c.o CMakeFiles/drinjectlib.dir/unix/os.c.o CMakeFiles/drinjectlib.dir/unix/module.c.o CMakeFiles/drinjectlib.dir/string.c.o CMakeFiles/drinjectlib.dir/io.c.o CMakeFiles/drinjectlib.dir/x86/x86.asm.o ../lib64/libdrdecode.a 
+/usr/bin/objcopy --only-keep-debug ../lib64/libdrinjectlib.so ../lib64/libdrinjectlib.so.debug
+/usr/bin/objcopy --add-gnu-debuglink=../lib64/libdrinjectlib.so.debug ../lib64/libdrinjectlib.so
+/usr/bin/strip -g -x ../lib64/libdrinjectlib.so

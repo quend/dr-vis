@@ -1,0 +1,4 @@
+/usr/bin/cc           -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -DX64   -DX64 -DX86_64 -DLINUX  CMakeFiles/bbcov2lcov.dir/bbcov2lcov.c.o  -o ../lib64/release/bbcov2lcov -rdynamic ../../lib64/release/libdynamorio.so.4.1 ../../ext/lib64/release/libdrsyms.so ../../ext/lib64/release/libdrcontainers.a ../../lib64/release/libdynamorio.so.4.1 
+/usr/bin/objcopy --only-keep-debug ../lib64/release/bbcov2lcov ../lib64/release/bbcov2lcov.debug
+/usr/bin/objcopy --add-gnu-debuglink=../lib64/release/bbcov2lcov.debug ../lib64/release/bbcov2lcov
+/usr/bin/strip -g -x ../lib64/release/bbcov2lcov

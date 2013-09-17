@@ -1,0 +1,4 @@
+/usr/bin/cc  -fPIC -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable   -nostartfiles     -shared -Wl,-soname,libdrpreload.so -o ../lib64/release/libdrpreload.so CMakeFiles/drpreload.dir/unix/preload.c.o CMakeFiles/drpreload.dir/config.c.o CMakeFiles/drpreload.dir/unix/os.c.o CMakeFiles/drpreload.dir/x86/x86.asm.o 
+/usr/bin/objcopy --only-keep-debug ../lib64/release/libdrpreload.so ../lib64/release/libdrpreload.so.debug
+/usr/bin/objcopy --add-gnu-debuglink=../lib64/release/libdrpreload.so.debug ../lib64/release/libdrpreload.so
+/usr/bin/strip -g -x ../lib64/release/libdrpreload.so

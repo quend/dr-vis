@@ -1,0 +1,4 @@
+/usr/bin/cc  -fPIC      -m64 -std=gnu99 -fno-strict-aliasing -fno-stack-protector -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -DX64    -DX64 -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fno-stack-protector  -fPIC -shared -lgcc -Xlinker -T -Xlinker "/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/clients/bbcov/ldscript"     -shared -Wl,-soname,libbbcov.so -o ../lib64/release/libbbcov.so CMakeFiles/bbcov.dir/bbcov.c.o CMakeFiles/bbcov.dir/__/common/modules.c.o ../../lib64/release/libdynamorio.so.4.1 ../../ext/lib64/release/libdrmgr.so ../../ext/lib64/release/libdrcontainers.a ../../ext/lib64/release/libdrx.so ../../lib64/release/libdynamorio.so.4.1 
+/usr/bin/objcopy --only-keep-debug ../lib64/release/libbbcov.so ../lib64/release/libbbcov.so.debug
+/usr/bin/objcopy --add-gnu-debuglink=../lib64/release/libbbcov.so.debug ../lib64/release/libbbcov.so
+/usr/bin/strip -g -x ../lib64/release/libbbcov.so

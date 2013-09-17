@@ -1,0 +1,4 @@
+/usr/bin/c++  -fPIC      -m64 -fvisibility=internal -O3 -g3 -Wall -Werror -Wwrite-strings -Wno-unused-but-set-variable -O2    -DX86_64 -DLINUX -DUSE_VISIBILITY_ATTRIBUTES -fno-stack-protector  -fPIC -shared -lgcc -Xlinker -T -Xlinker "/home/andrew/Dropbox/School/rcos/dr-vis/dynamorio/build/api/samples/ldscript"     -shared -Wl,-soname,libstl_test.so -o bin/libstl_test.so CMakeFiles/stl_test.dir/stl_test.cpp.o ../../lib64/release/libdynamorio.so.4.1 
+/usr/bin/objcopy --only-keep-debug bin/libstl_test.so bin/libstl_test.so.debug
+/usr/bin/objcopy --add-gnu-debuglink=bin/libstl_test.so.debug bin/libstl_test.so
+/usr/bin/strip -g -x bin/libstl_test.so
