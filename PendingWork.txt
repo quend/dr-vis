@@ -1,0 +1,20 @@
+October 1st, 2013
+
+Current Operations
++++++++++++++++++++++
+
+- get the current code working that has been given to us by the Google dev co-op
+
+- email Empac visualization contact to include him in the visualization side of the project early on in the process
+
+- solidify whether or not certain software will be made Open Source, if so, add to github, compile, and determine what we can and cannot use
+
+
+Future Work to be Done
+++++++++++++++++++++++
+
+- once the already open source code packages are parsed through and what is left is code that we can use productively and run is in the github repository
+
+- add necessary code to combine all the open source snippets together, add code that is needed on this platform level
+
+- build off of this platform to produce a program that has output (program walkthrough breakpoints, 'mapping' of the processes --> details of these internal stages) that will work as input for the visualization element of the project
